@@ -13,7 +13,7 @@ var day = flag.Int("day", 1, "Advent of code day to run")
 func main() {
 	flag.Parse()
 	challenges := challenges.DayChallenges
-	bytes, err := ioutil.ReadFile(fmt.Sprintf("inputs/day-%d.go", *day))
+	bytes, err := ioutil.ReadFile(fmt.Sprintf("inputs/day-%d.txt", *day))
 	if err != nil {
 		panic(err)
 	}
